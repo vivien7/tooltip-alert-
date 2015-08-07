@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css">
+
+    <link type="text/css" rel="stylesheet" href="css/tip.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+      <div id="alert" data-target="#alert-3" data-dismiss="alert">
+          <div class="btn btn-link">
+              <button id="showing"  type="button" class="btn btn-link" data-target="#alert-3" data-dismiss="alert">Link</button>
+          </div>
+                   <div id="alert-3" class="alert ui-poptip fade in">
+                       <div class="ui-poptip-shadow">
+                           <div class="ui-poptip-container">
+                               <div class="ui-poptip-arrow-left ui-poptip-arrow-bottom">
+                                   <span>◆</span>
+                                   <em>◆</em>
+                                </div>
+                               <div class="ui-poptip-avatar">
+                                    <a class="avatar-link" href="/people/imike">
+                                     <img class="avatar avatar-xs" alt="meinv" src="img/user1.png" width="20%" height="15%">
+                                    </a>
+                               </div>
+                               <div class="ui-poptip-txt">
+                                  <span class="name" style="color: #2e6da4">张亮</span>
+                                    <i class="fa fa-male item"></i>
+                                    <div class="blank3"></div>
+                                    <div class="avatar-linkavatar-linkavatar-link">创业者</div>
+
+                                    <div class="blank3"></div>
+                                   <div class="personal"><span class="info-wrap item"><span><i class="fa.fa-building"></i>SmileTech</span><span >联合创始人</span></span></div>
+                               </div>
+                                <div class="lower clearfix">
+                                   <div class="meta">
+                                      <a class="item"  target="_blank" href="/people/imike/answers">
+                                           <ul>
+                                               <li> <span class="value">1362</span></li>
+                                               <li><span class="key">回答</span></li>
+                            </ul>
+                        </a>
+                        <a class="item" target="_blank" href="/people/imike/posts">
+                            <ul>
+                                <li>  <span class="value">72</span></li>
+                                <li><span class="key">文章</span></li>
+                            </ul>
+                        </a>
+                        <a class="item" target="_blank" href="/people/imike/followers">
+                            <ul>
+                                <li><span class="value">617K</span></li>
+                                <li> <span class="key">关注者</span></li>
+                            </ul>
+                        </a>
+                    </div>
+                    <div class="item">
+
+
+                        <button  class="zg-btn zg-btn-follow zm-rich-follow-btn">关注他</button>
+
+
+                        <a href="/inbox/5313324000" class="zg-btn-white member-profile-card-pm" data-pm-name="张亮" data-pm-hash="8b68876001197b3b9cd605b20814616f"><i class="fa  fa-mail-forward">私信</i></a>
+                    </div>
+                </div><!--lower clearfix end-->
+             </div><!--ui-poptip-container end-->
+
+         </div><!--ui-poptip-shadow end-->
+        </div>
+      </div>
+</div>
+<script type="text/javascript">
+    $('#showing').mouseenter(function () {
+     $('#alert-3').css('visibility','visible');
+     })
+       $('#alert').mouseleave(function () {
+       $('#alert-3').css('visibility','hidden');
+     })
+</script>
+</body>
+</html>
